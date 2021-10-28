@@ -1,4 +1,4 @@
-package ex1;
+package ex1_ex2;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -25,7 +25,7 @@ public class Student {
 
     public double getTotalFinal() {
         double total = 0.1 * bonus + 0.3 * report + 0.15 * app + 0.45 * lt;
-        return Math.round(total * 10) / 10;
+        return Math.round(total * 100) / 100;
     }
 
     public Student() {

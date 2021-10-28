@@ -1,4 +1,4 @@
-package ex1;
+package ex1_ex2;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
