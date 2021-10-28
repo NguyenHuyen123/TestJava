@@ -70,8 +70,8 @@ public class RunApplication {
         System.out.println("--------- Kiểm tra phải email Gmail hay Outlook (isVailEmail) & thống kê");
         // ^([\w.-]+)@|(?!gmail|outlook)(([a-zA-Z\d-]+\.)+)([a-zA-Z]{2,15}|\d{1,3})(\]?)$
         List<Student> lstStudentEmail = lstStudentTBSort.stream().filter(s -> s.isVailEmailGmail()).collect(Collectors.toList());
-        for (Student student : lstStudentEmail) {
-            System.out.println(student.toString());
+        for (Student student : lstStudentEmail ) {
+            System.out.println(student.toString() );
         }
 
     }

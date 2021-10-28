@@ -36,7 +36,7 @@ public class Student {
         return id + "," + name + "," + email + "," + bonus + "," + report + "," + app + "," + lt;
     }
 
-    public boolean isVailEmail() {
+    public boolean isVailEmail( ) {
         String regex = "^([\\w.-]+)@|(?!gmail|outlook)(([a-zA-Z\\d-]+\\.)+)([a-zA-Z]{2,15}|\\d{1,3})(\\]?)$";
         Pattern p = Pattern.compile(regex);
         Matcher m = p.matcher(email);

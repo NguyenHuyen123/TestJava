@@ -38,7 +38,7 @@ public class CSVSupport {
                     double lt = Double.parseDouble(splitData[6]);
                     lstStudent.add(new Student(id, name, email, bonus, report, app, lt));
                 }
-                counter++;
+                counter++ ;
             }
 
         } catch (
