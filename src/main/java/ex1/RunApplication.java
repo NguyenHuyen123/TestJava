@@ -66,5 +66,13 @@ public class RunApplication {
         int tbTrungBinh = lstStudentTBSort.stream()
                 .filter(s -> s.getTotalFinal() < 6.5 && s.getTotalFinal() > 5).collect(Collectors.toList()).size();
         System.out.println("Trung Bình \t \t \t  " + tbTrungBinh + "\t \t" + tbTrungBinh * 100 / lstStudentTBSort.size() + "%" );
+
+        System.out.println("--------- Kiểm tra phải email Gmail hay Outlook (isVailEmail) & thống kê");
+        // ^([\w.-]+)@|(?!gmail|outlook)(([a-zA-Z\d-]+\.)+)([a-zA-Z]{2,15}|\d{1,3})(\]?)$
+        List<Student> lstStudentEmail = lstStudentTBSort.stream().filter(s -> s.isVailEmailGmail()).collect(Collectors.toList());
+        for (Student student : lstStudentEmail) {
+            System.out.println(student.toString());
+        }
+
     }
 }
